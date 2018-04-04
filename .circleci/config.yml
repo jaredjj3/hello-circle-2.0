@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:rc-node-browsers
+    steps:
+      - checkout
+      - run: ruby ./hello_world.rb
